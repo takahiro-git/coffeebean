@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Raleway:wght@400;500;700&display=swap');
+
+/* css */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+p
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper
+{
+    width: 100%;
+}
+
+/* (1) Header Area */
+.nav
+{
+    /* border: 2px solid red; */
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
+.nav h1
+{
+    /* border: 2px solid blue; */
+    width: 50%;
+    float: left;
+}
+
+.nav h1 a
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #96746b;
+}
+.nav ul
+{
+    /* border: 2px solid green; */
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top: 1em;
+}
+
+.nav ul li
+{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.nav ul li a
+{
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #312a26;
+    font-weight: 700;
+}
+
+/* (2) Banner Area */
+.banner
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 670px;
+    background-image: url('../images/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text
+{
+    /* border: 2px solid yellow; */
+    width: 45%;
+    position: absolute;
+    left: 7.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-text h2
+{
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #c7a17a;
+}
+
+.banner-text h2 span
+{
+    color: #96746b;
+}
+
+.banner-text p
+{
+    color: #fff;
+}
+
+.banner-text a
+{
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    background-color: #312a26;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* (3) Ads Area */
+.ads
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+/* parent containder */
+.ads-items
+{
+    /* border: 2px solid green; */
+    width: 48.5%;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+
+.ads-item1
+{
+    margin-right: 3%;
+    background-image: url('../images/ads-img1.jpg');
+}
+
+.ads-item2
+{
+    background-image: url('../images/ads-img2.jpg');
+}
+/* child containder */
+.ads-text
+{
+    /* border: 2px solid yellow; */
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.ads-text h3
+{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 3px 3px 6px #312a26;
+    line-height: 1.2em
+}
+
+.ads-text a
+{
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px #312a26;
+    display: inline-block;
+    margin: 1em;
+}
+
+/* (4) Merchandise Area */
+.merch
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header
+{
+    text-align: center;
+}
+
+.section-header span
+{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #c7a17a;
+}
+
+.section-header h2
+{
+    text-transform: uppercase;
+    color: #312a26;
+}
+
+.section-header hr
+{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 25%;
+    margin: auto;
+}
+
+.merch-gallery
+{
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.merch-items
+{
+    /* border: 2px solid green; */
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.merch-items img
+{
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* equivalent of background-size: cover */
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8)
+{
+    margin-right: 0;
+}
+
+/* (5 Discount Area */
+.discount
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    background-image: url('../images/discount-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+}
+
+.discount-text
+{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.discount-text span
+{
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text h2
+{
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text a
+{
+    font-family: "Raleway", sans-serif;
+    color: #312a26;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, .5);
+    display: inline-block;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/* (7) Ads Area */
+.ads-item3
+{
+    background-image: url('../images/ads-img3.jpg');
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+.ads-item4
+{
+    background-image: url('../images/ads-img4.jpg');
+    margin-bottom: 3%;
+}
+.ads-item5
+{
+    background-image: url('../images/ads-img5.jpg');
+    margin-right: 3%;
+}
+.ads-item6
+{
+    background-image: url('../images/ads-img6.jpg');
+}
+
+/* (8) Reservation Area */
+.reservation
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+
+form
+{
+    overflow: auto;
+}
+
+.form-group
+{
+    /* border: 2px solid blue; */
+    width: 49.5%;
+    float: left;
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    height: 650px;
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.form-group:nth-child(1)
+{
+    margin-right: 1%;
+}
+
+form label,
+form input,
+form select,
+form textarea
+{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+form label
+{
+    padding: 0;
+    margin-bottom: .5em;
+    font-weight: 700;
+}
+
+form p
+{
+    text-align: center;
+    font-weight: 700;
+    margin: 1em;
+}
+.res-time
+{
+    text-align: center;
+}
+
+.res-time *
+{
+    width: auto;
+}
+
+form h3
+{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form h3::after
+{
+    content:"";
+    background-image: url('../images/reservation-cards.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+
+.res-agreement *
+{
+    width: auto;
+}
+
+form input[type="submit"]
+{
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #c7a17a;
+}
+
+/* (9) Footer Area */
+.footer
+{
+    /* border: 2px solid red; */
+    background-image: url('../images/footer-img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.footer-content
+{
+    /* border: solid yellow; */
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+
+.footer-widget
+{
+    /* border: solid green; */
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+}
+
+.footer-widget:nth-child(4)
+{
+    margin-right: 0;
+}
+
+.footer-widget h3
+{
+    /* 
+    1)change the color to white
+    2)make it all capital letters
+    3)put text shadow same with h2 inside discount-text
+    4)put space on the outside the border of 1em
+    5)put space on bottom outside the border of 1em
+    */
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-widget th,
+.footer-widget td
+{
+    /* 
+    1)change the color to white
+    2)set the font family to Releway
+    3)put text shadow same with .footer-widget h3
+    */
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.footer-widget h4
+{
+    /* 
+    1)change the color to white
+    */
+    color: #fff;
+}
+
+.footer-widget p
+{
+    /* 
+    1)chenge the color to #c7a17a
+    */
+    color: #c7a17a
+}
+
+/* fix the inputs inside the footer-form and display them in one line ???*/
+
+.footer-form *
+{
+    width: auto;
+}
+
+/* (10) Social Footer Area */
+.social-footer
+{
+    /* border: 2px solid red; */
+    background-color: #19100f;
+    color: #fff;
+    overflow: auto;
+    padding: 1em 7.5%;
+}
+
+.social-widget
+{
+    /* border: 2px solid yellow; */
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.social-widget h3
+{
+    text-transform: uppercase;
+}
+
+.social-widget img
+{
+    width: 1.5em;
+}
